@@ -1,0 +1,298 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.first {
+    height: 85px;
+    display: flex;
+    padding: 10px;
+    background-color: #e5e5e5;
+}
+h1 {
+    margin-top: 10px;
+    padding: 20px;
+    height: 110px;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Montserrat", sans-serif;
+}
+.time-bar {
+    margin-left: 640px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    top: -45px;
+    width: 20%;
+    box-shadow: 0 4px 2px -2px gray;
+    z-index: 1000;
+}
+#clock {
+    font-size: 20px;
+}
+.input {
+    display: flex;
+    width: 100%;
+}
+.input-search {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.search-bar i {
+    height: 100%;
+    padding: 15px;
+    background-color: #b1b1b1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 1px;
+    transition: box-shadow 0.3s, background-color 0.3s, color 0.3s;
+}
+.search-bar i:hover {
+    background-color: rgb(129, 129, 129);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.registration i {
+    order: -1;
+}
+.signin i {
+    order: -1;
+}
+.registration {
+    display: flex;
+    font-family: "Ubuntu", sans-serif;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 200px;
+    margin-top: 13px;
+    gap: 4px;
+    padding: 13px;
+    border: 1px solid rgb(201, 200, 200);
+    border-radius: 17px;
+    background-color: rgb(187, 187, 187);
+    height: 45px;
+    transition: box-shadow 0.3s, background-color 0.3s, color 0.3s;
+    font-size: 14px;
+}
+.registration:hover {
+    background-color: rgb(133, 133, 133);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.signin {
+    display: flex;
+    height: 45px;
+    font-size: 14px;
+    font-family: "Ubuntu", sans-serif;
+    margin-top: 13px;
+    background-color: rgb(201, 200, 200);
+    border-radius: 17px;
+    align-items: center;
+    gap: 4px;
+    background-color: rgb(187, 187, 187);
+    transition: box-shadow 0.3s, background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 100px;
+}
+.signin:hover {
+    background-color: rgb(133, 133, 133);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.search-bar {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0;
+    margin-left: 590px;
+    margin-top: 15px;
+    background-color: white;
+    overflow: hidden;
+}
+.second {
+    background-color: rgb(184, 184, 184);
+    height: 3850px;
+    flex-shrink: 4;
+}
+div.items {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+    border: 1px solid black;
+}
+.items > div {
+    color: white;
+    flex: 1;
+    border-right: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s, background-color 0.3s, color 0.3s;
+    font-family: "Ubuntu", sans-serif;
+    background-color: black;
+}
+.items > div:hover {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    background-color: rgb(60, 60, 60);
+    cursor: pointer;
+}
+#news-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.article {
+    flex: 1 1 calc(33.33% - 20px);
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+.article img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.article h2 {
+    font-size: 1.5rem;
+    margin: 20px 20px;
+}
+@media (max-width: 768px) {
+    .search-bar {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .registration, .signin {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 1024px) {
+    .search-bar {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .registration, .signin {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+div.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.items > div {
+    flex: 1 1 100%;
+    text-align: center;
+    padding: 10px;
+}
+@media (min-width: 768px) {
+    .items > div {
+        flex: 1 1 30%;
+    }
+}
+@media (min-width: 1024px) {
+    .items > div {
+        flex: 1 1 calc(16.66% - 10px);
+    }
+}
+#news-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.article {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+    .article {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+@media (min-width: 1024px) {
+    .article {
+        flex: 1 1 calc(33.33% - 20px);
+    }
+}
+@media (max-width: 768px) {
+    .time-bar {
+        margin-left: 0;
+        width: 100%;
+        position: static;
+        margin-top: 10px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .first {
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1379px) {
+    .first {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .search-bar {
+        width: 200px;
+        margin-right: 10px;
+    }
+    .time-bar {
+        width: 200px;
+    }
+    .registration, .signin {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+}
+@media (min-width: 1380px) {
+    .search-bar {
+        width: 300px;
+    }
+    .registration, .signin {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .time-bar {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+        text-align: center;
+    }
+}
