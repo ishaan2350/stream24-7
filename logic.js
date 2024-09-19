@@ -1,5 +1,5 @@
 // Your API Key and Base URL
-const API_KEY = process.env.API_KEY; // Use your environment variable
+const API_KEY = process.env.NEXT_PUBLIC_API_KEY; // Use your environment variable
 const BASE_URL = 'https://newsapi.org/v2/top-headlines';
 require('dotenv').config();
 
